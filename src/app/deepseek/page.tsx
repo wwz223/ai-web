@@ -9,6 +9,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Home,
+  User,
 } from "lucide-react";
 
 // 导入组件
@@ -305,6 +306,14 @@ export default function DeepSeekChat() {
           </div>
 
           <div className="flex items-center gap-2">
+            <Link
+              href="/profile"
+              className={`p-2 rounded-lg ${
+                isDark ? "hover:bg-gray-700" : "hover:bg-gray-100"
+              }`}
+            >
+              <User size={20} />
+            </Link>
             <Link
               href="/"
               className={`p-2 rounded-lg ${

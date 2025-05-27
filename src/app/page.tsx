@@ -251,6 +251,14 @@ export default function ChatPage() {
                 )}
               </div>
 
+              {/* 用户中心链接 */}
+              <Link
+                href="/profile"
+                className="p-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white rounded-xl transition-all shadow-sm hover:shadow-md"
+              >
+                <User className="w-5 h-5" />
+              </Link>
+
               {/* DeepSeek页面链接 */}
               <Link
                 href="/deepseek"
